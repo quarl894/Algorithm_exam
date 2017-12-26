@@ -1,5 +1,7 @@
 package ch2_LinkedList;
 
+import ch2_LinkedList.LinkedList.Node;
+
 public class LinkedList {
 	private Node head;
 	private Node tail;
@@ -11,7 +13,7 @@ public class LinkedList {
 		public Node(Object input){
 			this.data = input;
 			this.next = null;
-		}	
+		}
 	}
 		public String toString(){
 			if(head == null){
@@ -134,5 +136,49 @@ public class LinkedList {
 		    }
 		    // 탐색 대상을 찾았다면 대상의 인덱스 값을 리턴합니다.
 		    return index;
+		}
+		
+		public ListIterator listIterator(){
+			return new ListIterator();
+		}
+		
+		public class ListIterator {
+			private Node lastReturned;
+			private Node next;
+			private int nextIndex;
+			
+			ListIterator(){
+				next = head;
+				nextIndex = 0;
+			}
+			public Object next() {
+			    lastReturned = next;
+			    next = next.next;
+			    nextIndex++;
+			    return lastReturned.data;
+			}
+			public boolean hasNext() {
+			    return nextIndex < size();
+			}
+			public void add(Object input){
+			    Node newNode = new Node(input);
+			    if(lastReturned == null){
+			        head= newNode;
+			        newNode.next = next;
+			    } else {
+			        lastReturned.next = newNode;
+			        newNode.next = next;
+			    }
+			    lastReturned = newNode;
+			    nextIndex++;
+			    size++;
+			}
+			public void remove(){
+			    if(nextIndex == 0){
+			        throw new IllegalStateException();
+			    }
+			    LinkedList.this.remove(nextIndex-1);
+			    nextIndex--;
+			}
 		}
 }
