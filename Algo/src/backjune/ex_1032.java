@@ -1,5 +1,6 @@
 package backjune;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /*
@@ -12,21 +13,16 @@ dir *.exe라고 치면 확장자가 exe인 파일이 다 나온다. "dir 패턴"과 같이 치면 그 패
 public class ex_1032 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		String text1, text2, text3;
-		int N;
-		N = scan.nextInt();
-		text1 = scan.next();
-		text2 = scan.next();
-		text3 = scan.next();
-		String result="";
-		
-		for(int i=0; i<text1.length(); i++){
-			if(text1.charAt(i)==text2.charAt(i) && text1.charAt(i)==text3.charAt(i) && text2.charAt(i)==text3.charAt(i)){
-				result +=text1.charAt(i);
-			}else{
-				result +="?";
+		int num =scan.nextInt();
+		char[] chars = scan.next().toCharArray(); //첫번째 문자를 바로 받아서 문자로 쪼갬
+		for(int i=1; i<num; i++){ //첫번째 단어는 받았으니 두번째부터 i=1
+			String temp = scan.next();
+			for(int j=0; j<chars.length; j++){
+				if(chars[j] !=temp.charAt(j)){
+					chars[j]='?';
+				}
 			}
 		}
-		System.out.println(result);
+		System.out.println(String.valueOf(chars)); //char[]를 String으로 변환해준다.
 	}
 }

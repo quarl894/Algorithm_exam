@@ -31,9 +31,7 @@ public class ex_1316 {
 		for(int i=0; i<26; i++){
 			arr[i] = false;
 		}
-		
 		for(int i=0; i<alph.length-1; i++){
-			//마지막 값 따로 구혀해줘야함
 			int num = alph[i] -97;
 			if(alph[i]!=alph[i+1]){
 				if(arr[num]==false){
@@ -46,8 +44,6 @@ public class ex_1316 {
 		if(arr[alph[alph.length-1]-97]==true){
 			return 0;
 		}
-		
 		return 1;
 	}
-
 }
