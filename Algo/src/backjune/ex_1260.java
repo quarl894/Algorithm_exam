@@ -6,67 +6,64 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class ex_1260 {
-	static int[][] graph;
-	static boolean visited[];
-	static int N;
-	static int E;
-	static int startPoint;
-	
-	public static void dfs(int i){
-		visited[i] = true;
-		System.out.print(i+" ");
-		
-		for(int j=1; j<=N; j++){
-			if(graph[i][j]==1 && visited[j]==false){
-				dfs(j);
-			}
-		}
-	}
-	
-	public static void bfs(int i){
-		Queue<Integer> q = new LinkedList<Integer>();
-		q.offer(i);
-		visited[i] = true;
-		System.out.print(i+" ");
-		
-		int temp;
-		while(!q.isEmpty()){
-			temp = q.poll();
-			for(int j=0; j<N+1; j++){
-				if(graph[temp][j]==1 && visited[j]==false){
-					q.offer(j);
-					visited[j] = true;
-					System.out.print(j+ " ");
-				}
-			}
-		}
-	}
-	public static void main(String[] args) throws Exception{
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		String str = br.readLine();
-		String[] sp = str.split(" ");
-		N = Integer.parseInt(sp[0]);
-		graph = new int[1001][1001];
-		E = Integer.parseInt(sp[1]);
-		visited = new boolean[1001];
-		startPoint = Integer.parseInt(sp[2]);
-		
-		int a,b;
-		
-		for(int i=1; i<=E; i++){
-			StringTokenizer st = new StringTokenizer(br.readLine(), " ");
-			a = Integer.parseInt(st.nextToken());
-			b = Integer.parseInt(st.nextToken());
-			graph[a][b] = graph[b][a] =1;
-		}
-		br.close();
-		dfs(startPoint);
-		for(int j=1; j<=N; j++){
-			visited[j] = false;
-		}
-		System.out.println();
-		
-		bfs(startPoint);
-	}
+// 인접행렬, Visit을 사용한 BFS
+public class ex_1260{
+    static int[][] ad;
+    static boolean[] visit;
+    static int Ne, Nv;
+    
+    public static void dfs(int i){
+        visit[i] = true;   // 함수 호출 시, visit 했음을 표시
+        System.out.print(i+ " ");
+        
+        for(int j = 1; j < Nv+1; j++){
+            if(ad[i][j] == 1 && visit[j] == false){  // j를 방문하지 않았으면 j를 방문한다.
+                dfs(j);
+            }
+        }
+    }
+    
+    public static void bfs(int i){
+        Queue <Integer> q = new LinkedList<Integer>();
+        
+        q.offer(i);
+        visit[i] = true;
+        
+        while(!q.isEmpty()){
+            int temp = q.poll();
+            System.out.print(temp+" ");
+            
+            for(int j = 1; j <= Nv; j++){
+                if(ad[temp][j] == 1 && visit[j] == false){
+                    q.offer(j);
+                    visit[j] = true; // 큐에 넣을 노드들을 잠재적으로 방문한다는 가정하에 입력
+                    }
+                }
+            }
+    }
+    
+    public static void main(String[] args) throws Exception{
+    	BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
+    	String[] spl = br.readLine().split(" ");
+    	Nv =  Integer.parseInt(spl[0]);//정점
+        Ne = Integer.parseInt(spl[1]);; //간선
+        int num = Integer.parseInt(spl[2]);
+        ad = new int[Nv+1][Nv+1];
+        visit = new boolean[Nv+1];
+        
+        for(int i = 0; i < Ne; i++){
+        	StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+            int t1, t2;
+            t1 = Integer.parseInt(st.nextToken());
+            t2 = Integer.parseInt(st.nextToken());
+            //양방향
+            ad[t1][t2] = ad[t2][t1] = 1;
+        }
+        br.close();
+        dfs(num);
+        for(int i=0; i<Nv+1; i++) visit[i]=false;
+        System.out.println();
+        bfs(num);   
+    }   
 }
+
