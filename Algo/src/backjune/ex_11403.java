@@ -32,6 +32,7 @@ public class ex_11403 {
 		for(int k=0; k<N; k++){
 			for(int i=0; i<N; i++){
 				for(int j=0; j<N; j++){
+					//일자가 아닌 중간 경로를 통해 연결되는 것
 					if(ad[i][j]>ad[i][k]+ad[k][j]){
 						ad[i][j] = ad[i][k] +ad[k][j];
 					}
@@ -41,6 +42,7 @@ public class ex_11403 {
 		
 		for(int i=0; i<N; i++){
 			for(int j=0; j<N; j++){
+				//inf값이면 연결점이 없다는 것
 				System.out.printf("%d ",ad[i][j] == inf ? 0 :1);
 			}
 			System.out.println();
