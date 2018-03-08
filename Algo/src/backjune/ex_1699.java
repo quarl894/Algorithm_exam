@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public class ex_1699 {
-	static int count =0;
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int N = Integer.parseInt(br.readLine());
@@ -23,6 +22,5 @@ public class ex_1699 {
 		}
 		System.out.println(dp[N]);
 		br.close();
-		
 	}
 }
