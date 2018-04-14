@@ -31,5 +31,4 @@ public class ex_11053 {
 		System.out.println(dp[N-1]);
 		br.close();
 	}
-
 }

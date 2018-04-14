@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Scanner;
 
+//Info class 생성
 class Info{
 	int age;
 	String name;
@@ -26,14 +27,15 @@ public class ex_10814 {
 			arr.add(new Info(age, name, i));
 		}
 
+		//정렬시 나이순 정렬 후 가입순으로 두번째 정렬
 		Collections.sort(arr,new Comparator<Info>(){
 			@Override
 			public int compare(Info a1, Info a2){
-				if(a1.age>a2.age) return -1;
-				else if(a1.age<a2.age) return 1;
+				if(a1.age>a2.age) return 1;
+				else if(a1.age<a2.age) return -1;
 				else{
-					if(a1.num>a2.num) return -1;
-					else if(a1.num<a2.num) return 1;
+					if(a1.num>a2.num) return 1;
+					else if(a1.num<a2.num) return -1;
 					else return 0;
 				}
 			}

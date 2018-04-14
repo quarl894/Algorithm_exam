@@ -1,37 +1,36 @@
 package backjune;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
 
 public class ex_1003 {
-	static int c0=0;
-	static int c1=0;
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		
-		int num, result;
-		num = sc.nextInt();
-
-		for(int i=0; i<num; i++){
-			result = sc.nextInt();
-			fibonacci(result);
-			System.out.println(c0+" "+c1);
-			c0=0;
-			c1=0;
+	public static void main(String[] args) throws Exception{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int num = Integer.parseInt(br.readLine());
+		StringBuilder st= new StringBuilder();
+		ArrayList<fibo> arr = new ArrayList<>();
+		arr.add(new fibo(1,0));
+		arr.add(new fibo(0,1));
+		for(int i=2; i<=40; i++){
+			arr.add(new fibo(arr.get(i-2).a+arr.get(i-1).a,arr.get(i-2).b+arr.get(i-1).b));
 		}
+		for(int i=0; i<num; i++){
+			int result = Integer.parseInt(br.readLine());
+			st.append(arr.get(result).a+" "+ arr.get(result).b+"\n");
+		}
+		System.out.println(st);
+		br.close();
+		
 	}
+}
+
+class fibo{
+	int a;
+	int b;
 	
-	//fivonacci function
-	private static int fibonacci(int n) {
-	    if (n==0) {
-	    	c0++;
-	    	//System.out.print("0");
-	        return 0;
-	    } else if (n==1) {
-	    	c1++;
-	    	//System.out.print("1");
-	        return 1;
-	    } else {
-	        return fibonacci(n-1) + fibonacci(n-2);
-	    }
+	public fibo(int a, int b){
+		this.a = a;
+		this.b = b;
 	}
 }

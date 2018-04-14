@@ -18,6 +18,7 @@ public class ex_1920{
 		Arrays.sort(arr);
 		int num = Integer.parseInt(br.readLine());
 		String[] spl2 = br.readLine().split(" ");
+		//없으면 음수로 반환됨.
 		for(int i=1; i<=num; i++){
 			if(Arrays.binarySearch(arr, Integer.parseInt(spl2[i-1]))>=1){
 				st.append("1");
