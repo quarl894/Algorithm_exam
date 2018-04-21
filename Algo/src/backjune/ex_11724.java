@@ -9,15 +9,13 @@ public class ex_11724 {
     static int[][] ad;
     static boolean[] visit;
     static int Ne, Nv;
+    // 방문안했을 경우 카운팅
     static int count =0;
-    static int result =0;
     public static void dfs(int i){
         visit[i] = true;   // 함수 호출 시, visit 했음을 표시
         
         for(int j = 1; j < Nv+1; j++){
             if(ad[i][j] == 1 && visit[j] == false){// j를 방문하지 않았으면 j를 방문한다.
-            	//System.out.print(j+ " ");
-            	//count++;
             	dfs(j);
             }
         }
@@ -47,5 +45,4 @@ public class ex_11724 {
         }
         System.out.println(count);
     }   
-
 }
