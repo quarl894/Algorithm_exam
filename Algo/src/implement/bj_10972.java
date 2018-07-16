@@ -8,9 +8,13 @@ import java.util.StringTokenizer;
 public class bj_10972 {
     public static boolean next_permutation(int[] a) {
         int i = a.length-1;
+       // System.out.println("i: " + i);
+
         while (i > 0 && a[i-1] >= a[i]) {
             i -= 1;
+            System.out.println("i: " + i);
         }
+
 
         // 마지막 순열
         if (i <= 0) {
