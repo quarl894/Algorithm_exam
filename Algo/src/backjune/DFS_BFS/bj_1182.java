@@ -6,44 +6,36 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class bj_1182 {
-    static int N;
-    static int S;
-    static int cnt = 0;
-    static int[] numArr = new int[21];
-
-    public static void main(String[] args) throws IOException {
-
+    static int n;
+    static int s;
+    static String[] bubun;
+    static int ans;
+    static boolean[] chk;
+    public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
+        String[] tmp = br.readLine().split(" ");
+        n = Integer.parseInt(tmp[0]);
+        s = Integer.parseInt(tmp[1]);
+        chk = new boolean[n];
+        bubun = br.readLine().split(" ");
+        ans = 0;
+        if(s==0) ans = -1;
+        dfs(0,0);
+        System.out.println(ans);
+        br.close();
 
-        N = Integer.parseInt(st.nextToken());
-        S = Integer.parseInt(st.nextToken());
-
-        st = new StringTokenizer(br.readLine());
-        for (int i = 0; i < N; i++) {
-
-            numArr[i] = Integer.parseInt(st.nextToken());
-        }
-
-        solve(0, 0);
-
-        // S가 0인 경우 공집합도 포함되므로 개수에서 -1을 빼준다.
-        if (S == 0) {
-            cnt -= 1;
-        }
-
-        System.out.println(cnt);
     }
 
-    static void solve(int sum, int step) {
-        System.out.println(sum + " " + step);
-        if (step == N) {
-            if (sum == S) cnt++;
-            return;
+    private static void dfs(int pos, int sum){
+        if(sum==s) ans++;
+
+        for(int i=pos; i<n; i++){
+            if(!chk[i]){
+                chk[i] = true;
+                dfs(i+1, sum+Integer.parseInt(bubun[i]));
+                chk[i] = false;
+            }
         }
-        solve(sum, step + 1);
-        System.out.println("start : " + sum + ", " + step);
-        solve(sum + numArr[step], step + 1);
-        System.out.println("END");
+        return;
     }
 }
