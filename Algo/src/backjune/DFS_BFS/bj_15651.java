@@ -7,43 +7,37 @@ public class bj_15651 {
     static int m;
     static int[] arr;
     static boolean[] visited;
-    static int sum;
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         n = sc.nextInt();
         m = sc.nextInt();
+        visited = new boolean[n];
 
-
-        sum = n*m;
-        int num =0;
-        arr = new int[sum];
-        visited = new boolean[sum];
+        arr = new int[n];
         for(int i=0; i<n; i++){
-            for(int j=0; j<m; j++){
-                arr[num++] = i+1;
-            }
+            arr[i] = i+1;
         }
+
+        dfs(0,0,"");
+        sc.close();
 
     }
 
-    private static void bfs(int a, int cnt){
+    private static void dfs(int pos, int cnt, String str){
         if(cnt==m){
-            print();
+            System.out.println(str);
             return;
         }
 
-        for(int i=0; i<sum; i++){
-            if(!visited[i]){
-                visited[i] = true;
-                bfs(i,cnt+1);
-
+        for(int i=0; i<n; i++){
+            if(pos!=3 && !visited[i]) {
+                for (int j = pos; j < 3; j++) {
+                    if(pos==2) visited[i] = true;
+                    dfs(j, cnt + 1, str + (i+1) + " ");
+                }
                 visited[i] = false;
-
             }
-
         }
-    }
 
-    private static void print(){
     }
 }
