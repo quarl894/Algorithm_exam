@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00001f9e-d1f1-4ae5-9e38-472ed543881f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_15655.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algo/src/backjune/simsim/bj_11004.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algo/src/backjune/DP/bj_1463.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_15651.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_15651.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Algo/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,18 +15,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="bj_15649.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_15649.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="bj_15650.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_15650.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -50,7 +36,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bj_11004.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bj_11004.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Algo/src/backjune/simsim/bj_11004.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
@@ -58,6 +44,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bj_1463.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Algo/src/backjune/DP/bj_1463.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="37" column="34" lean-forward="true" selection-end-line="41" />
             </state>
           </provider>
         </entry>
@@ -145,7 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_1806.java" />
         <option value="$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_1644.java" />
         <option value="$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_14502.java" />
         <option value="$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_2580.java" />
@@ -196,6 +190,7 @@
         <option value="$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_15655.java" />
         <option value="$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_15651.java" />
         <option value="$PROJECT_DIR$/Algo/src/backjune/simsim/bj_11004.java" />
+        <option value="$PROJECT_DIR$/Algo/src/backjune/DP/bj_1463.java" />
       </list>
     </option>
   </component>
@@ -235,7 +230,7 @@
               <item name="Algo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="backjune" type="462c0819:PsiDirectoryNode" />
-              <item name="simsim" type="462c0819:PsiDirectoryNode" />
+              <item name="DP" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -263,12 +258,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.bj_11004">
+  <component name="RunManager" selected="Application.bj_1463">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="bj_10872" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="backjune.simsim.bj_10872" />
+    <configuration name="bj_11004" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="backjune.simsim.bj_11004" />
       <module name="Algo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -278,13 +273,13 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="bj_11004" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="backjune.simsim.bj_11004" />
+    <configuration name="bj_1463" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="backjune.DP.bj_1463" />
       <module name="Algo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="backjune.simsim.*" />
+          <option name="PATTERN" value="backjune.DP.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -361,19 +356,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.bj_10872" />
       <item itemvalue="Application.bj_1929" />
       <item itemvalue="Application.bj_15655" />
       <item itemvalue="Application.bj_15651" />
       <item itemvalue="Application.bj_11004" />
+      <item itemvalue="Application.bj_1463" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.bj_1463" />
         <item itemvalue="Application.bj_11004" />
         <item itemvalue="Application.bj_15651" />
         <item itemvalue="Application.bj_15655" />
         <item itemvalue="Application.bj_1929" />
-        <item itemvalue="Application.bj_10872" />
       </list>
     </recent_temporary>
   </component>
@@ -514,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534010594893</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="180812 백준">
+      <created>1534058311984</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1534058311984</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -652,13 +654,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_2178_2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_1697.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1030,6 +1025,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algo/src/backjune/DP/bj_1463.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="37" column="34" lean-forward="true" selection-end-line="41" />
         </state>
       </provider>
     </entry>
