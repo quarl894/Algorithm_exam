@@ -2,44 +2,67 @@ package backjune.simsim;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.StringTokenizer;
 
+/*
+처음 루트 노드가 1이므로 루트의 자식노드를 큐에 넣고 부모노드를 찾는 방식.
+양뱡향이므로 인접리스트로 둘 다 연결.
+ */
 public class bj_11725 {
-    public static void main(String[] args) throws Exception{
+    static int[] parents;
+    static boolean[] visited;
+    static LinkedList<Integer>[] node;
+    public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
-        ArrayList<xy> arr= new ArrayList<>();
-        StringBuilder st = new StringBuilder();
-        for(int i=0; i<n-1; i++){
-            String[] tmp = br.readLine().split(" ");
-            arr.add(new xy(Integer.parseInt(tmp[0]),Integer.parseInt(tmp[1])));
+
+        node = new LinkedList[n+1];
+        parents = new int[n+1];
+        visited = new boolean[n+1];
+
+        for(int i=0; i<=n; i++){
+            node[i] = new LinkedList<>();
         }
 
-        Collections.sort(arr, new Comparator<xy>() {
-            @Override
-            public int compare(xy o1, xy o2) {
-                if(o1.y>o2.y)
-                    return 1;
-                else{
-                    return -1;
-                }
-            }
-        });
 
-        for(xy a: arr) st.append(a.x+"\n");
-        System.out.println(st.toString());
+        while(n-->1){
+            StringTokenizer stk = new StringTokenizer(br.readLine());
+            int a = Integer.parseInt(stk.nextToken());
+            int b = Integer.parseInt(stk.nextToken());
+            node[a].add(b);
+            node[b].add(a);
+        }
+
+        visited[1] = true;
+        dfs(1);
         br.close();
+
     }
 
-    private static class xy{
-        int x;
-        int y;
+    private static void dfs(int s){
+        Queue<Integer> q = new LinkedList<>();
 
-        public xy(int x, int y) {
-            this.x = x;
-            this.y = y;
+        q.offer(s);
+
+        while(!q.isEmpty()){
+            int num = q.poll();
+
+            for(int a : node[num]){
+                if(!visited[a]) {
+                    q.offer(a);
+                    visited[a] = true;
+                    parents[a] = num;
+                }
+            }
         }
+
+        StringBuilder st = new StringBuilder();
+
+        for(int i=2; i<parents.length; i++){
+            st.append(parents[i]+"\n");
+        }
+        System.out.println(st);
     }
 }
