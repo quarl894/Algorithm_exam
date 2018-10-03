@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00001f9e-d1f1-4ae5-9e38-472ed543881f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_1761.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_3671.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_3671_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algo/src/backjune/simsim/bj_10546.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algo/src/backjune/simsim/bj_10845_ez.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algo/src/backjune/simsim/bj_1748.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_2146.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Algo/bin/" />
@@ -26,18 +20,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="bj_1967_2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_1967_2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="67" column="11" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="bj_1991.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_1991.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -77,7 +59,7 @@
       <file leaf-file-name="bj_1748.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Algo/src/backjune/simsim/bj_1748.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="75">
               <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -89,7 +71,7 @@
       <file leaf-file-name="bj_3671.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_3671.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="821">
+            <state relative-caret-position="990">
               <caret line="69" column="33" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -101,8 +83,8 @@
       <file leaf-file-name="bj_3671_2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_3671_2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+            <state relative-caret-position="1275">
+              <caret line="88" selection-start-line="88" selection-end-line="88" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bj_10546.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Algo/src/backjune/simsim/bj_10546.java">
+      <file leaf-file-name="bj_2146.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_2146.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+            <state relative-caret-position="435">
+              <caret line="86" column="13" lean-forward="true" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,8 +107,8 @@
       <file leaf-file-name="bj_test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1114">
-              <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            <state relative-caret-position="75">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -165,7 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_2206.java" />
         <option value="$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_12851.java" />
         <option value="$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_13549.java" />
         <option value="$PROJECT_DIR$/Algo/src/backjune/simsim/bj_12096.java" />
@@ -216,6 +197,7 @@
         <option value="$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_test.java" />
         <option value="$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_3671_2.java" />
         <option value="$PROJECT_DIR$/Algo/src/backjune/simsim/bj_10546.java" />
+        <option value="$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_2146.java" />
       </list>
     </option>
   </component>
@@ -231,6 +213,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,15 +239,12 @@
               <item name="Algo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="backjune" type="462c0819:PsiDirectoryNode" />
-              <item name="simsim" type="462c0819:PsiDirectoryNode" />
+              <item name="DFS_BFS" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -283,7 +265,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.bj_10546">
+  <component name="RunManager" selected="Application.bj_2146">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -298,13 +280,13 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="bj_10845_ez" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="backjune.simsim.bj_10845_ez" />
+    <configuration name="bj_2146" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="backjune.DFS_BFS.bj_2146" />
       <module name="Algo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="backjune.simsim.*" />
+          <option name="PATTERN" value="backjune.DFS_BFS.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -381,19 +363,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.bj_10845_ez" />
       <item itemvalue="Application.bj_3671" />
       <item itemvalue="Application.bj_3671_2" />
       <item itemvalue="Application.bj_test" />
       <item itemvalue="Application.bj_10546" />
+      <item itemvalue="Application.bj_2146" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.bj_2146" />
         <item itemvalue="Application.bj_10546" />
         <item itemvalue="Application.bj_3671_2" />
         <item itemvalue="Application.bj_test" />
         <item itemvalue="Application.bj_3671" />
-        <item itemvalue="Application.bj_10845_ez" />
       </list>
     </recent_temporary>
   </component>
@@ -625,7 +607,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537955914586</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="181001 문자열 backtracking 백준">
+      <created>1538411954806</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1538411954806</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -640,7 +629,7 @@
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="5" weight="0.4009434" />
+      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.3431604" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info id="Capture Tool" order="2" />
@@ -650,7 +639,7 @@
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info id="UI Designer" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="6" visible="true" weight="0.3431604" />
+      <window_info anchor="bottom" id="Debug" order="6" weight="0.3431604" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
@@ -664,7 +653,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="180703 3문제" />
     <MESSAGE value="180708 2문제" />
     <MESSAGE value="180714~180716 문제" />
     <MESSAGE value="180719" />
@@ -689,7 +677,8 @@
     <MESSAGE value="180922 DFS/BFS 백준" />
     <MESSAGE value="180923 DFS/BFS 백준" />
     <MESSAGE value="180926 DFS/BFS 백준" />
-    <option name="LAST_COMMIT_MESSAGE" value="180926 DFS/BFS 백준" />
+    <MESSAGE value="181001 문자열 backtracking 백준" />
+    <option name="LAST_COMMIT_MESSAGE" value="181001 문자열 backtracking 백준" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -736,33 +725,43 @@
           <properties />
           <option name="timeStamp" value="335" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_2146.java</url>
+          <line>63</line>
+          <properties />
+          <option name="timeStamp" value="495" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_2146.java</url>
+          <line>79</line>
+          <properties />
+          <option name="timeStamp" value="496" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_2146.java</url>
+          <line>80</line>
+          <properties />
+          <option name="timeStamp" value="497" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="491" />
+      <option name="time" value="498" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="br.readLine()" language="JAVA" />
-        <watch expression="tree" language="JAVA" />
-        <watch expression="arr" language="JAVA" />
-        <watch expression=".getString(R.string.)" language="JAVA" />
-        <watch expression="r" language="JAVA" />
-        <watch expression="root" language="JAVA" />
-        <watch expression="tree" language="JAVA" />
-        <watch expression="linked" language="JAVA" />
-        <watch expression="r" language="JAVA" />
-        <watch expression="d" language="JAVA" />
-        <watch expression="visited" language="JAVA" />
-        <watch expression="linked" language="JAVA" />
-        <watch expression="q" language="JAVA" />
-        <watch expression="hash" language="JAVA" />
+        <watch expression="s" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>s</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>hash</expression-string>
         <language-id>JAVA</language-id>
@@ -808,21 +807,9 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>.getString(R.string.)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_15651.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_12851.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -1079,9 +1066,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1089,9 +1073,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1050">
           <caret line="74" column="30" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1099,9 +1080,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="20" column="35" selection-end-line="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1161,7 +1139,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Algo/src/backjune/simsim/bj_1748.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="75">
           <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1171,8 +1149,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1114">
-          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        <state relative-caret-position="75">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1181,7 +1159,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_3671.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="821">
+        <state relative-caret-position="990">
           <caret line="69" column="33" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1191,8 +1169,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_3671_2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+        <state relative-caret-position="1275">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1201,8 +1179,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Algo/src/backjune/simsim/bj_10546.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        <state relative-caret-position="330">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algo/src/backjune/DFS_BFS/bj_2146.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="86" column="13" lean-forward="true" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
